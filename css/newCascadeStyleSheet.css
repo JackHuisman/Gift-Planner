@@ -1,0 +1,437 @@
+/**
+ * Gift Planner - Main Stylesheet
+ * 
+ * This file contains all custom styling for the Gift Planner application,
+ * building on top of Bootstrap's framework.
+ */
+
+/* General Styles
+-------------------------------------------------- */
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #6c757d;
+  --success-color: #1cc88a;
+  --info-color: #36b9cc;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --light-color: #f8f9fc;
+  --dark-color: #5a5c69;
+}
+
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f9fc;
+  color: #5a5c69;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+/* Improve focus visibility for accessibility */
+a:focus, button:focus, input:focus, select:focus, textarea:focus, .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+  outline: none;
+}
+
+/* Navbar & Header
+-------------------------------------------------- */
+.navbar {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+/* Cards & Containers
+-------------------------------------------------- */
+.card {
+  border: none;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e3e6f0;
+  padding: 0.75rem 1.25rem;
+}
+
+.card-header:first-child {
+  border-radius: calc(0.35rem - 1px) calc(0.35rem - 1px) 0 0;
+}
+
+.card-footer {
+  background-color: #f8f9fc;
+  border-top: 1px solid #e3e6f0;
+}
+
+/* For cards with color borders */
+.card.border-primary {
+  border-left: 0.25rem solid var(--primary-color) !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.card.border-success {
+  border-left: 0.25rem solid var(--success-color) !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.card.border-info {
+  border-left: 0.25rem solid var(--info-color) !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.card.border-warning {
+  border-left: 0.25rem solid var(--warning-color) !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.card.border-danger {
+  border-left: 0.25rem solid var(--danger-color) !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
+
+/* Contextual backgrounds with opacity */
+.bg-primary-light {
+  background-color: rgba(78, 115, 223, 0.2);
+}
+
+.bg-success-light {
+  background-color: rgba(28, 200, 138, 0.2);
+}
+
+.bg-info-light {
+  background-color: rgba(54, 185, 204, 0.2);
+}
+
+.bg-warning-light {
+  background-color: rgba(246, 194, 62, 0.2);
+}
+
+.bg-danger-light {
+  background-color: rgba(231, 74, 59, 0.2);
+}
+
+/* Shadows */
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+}
+
+.shadow {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(58, 59, 69, 0.175) !important;
+}
+
+/* Buttons & Form Elements
+-------------------------------------------------- */
+.btn {
+  font-weight: 500;
+  border-radius: 0.35rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.btn-success:hover {
+  background-color: #17a673;
+  border-color: #169b6b;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Form elements */
+.form-control:focus {
+  border-color: #bac8f3;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Dashboard Stats
+-------------------------------------------------- */
+.dashboard-stat {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.35rem;
+  overflow: hidden;
+}
+
+.dashboard-stat .stat-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  opacity: 0.4;
+  font-size: 2.5rem;
+}
+
+.dashboard-stat .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dashboard-stat .stat-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Avatar circles for activity feed */
+.avatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Tables
+-------------------------------------------------- */
+.table thead th {
+  background-color: #f8f9fc;
+  border-bottom: 2px solid #e3e6f0;
+  font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(78, 115, 223, 0.05);
+}
+
+/* Occasions & Gifts
+-------------------------------------------------- */
+/* Status indicators for occasions */
+.badge.bg-danger {
+  background-color: var(--danger-color) !important;
+}
+
+.badge.bg-warning {
+  background-color: var(--warning-color) !important;
+  color: #212529;
+}
+
+.badge.bg-info {
+  background-color: var(--info-color) !important;
+}
+
+.badge.bg-light {
+  background-color: var(--light-color) !important;
+  color: #212529;
+}
+
+/* Gift cards in suggestion list */
+.gift-card {
+  transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+}
+
+.gift-card .gift-image {
+  height: 180px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gift-price {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Responsive Adjustments
+-------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  
+  h1.h3 {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-stat .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Calendar & Date Related
+-------------------------------------------------- */
+.date-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.date-circle .day {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.date-circle .month {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* Footer
+-------------------------------------------------- */
+footer {
+  border-top: 1px solid #e3e6f0;
+}
+
+/* Breadcrumb
+-------------------------------------------------- */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+/* Animations
+-------------------------------------------------- */
+.fade-in {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Activity Feed
+-------------------------------------------------- */
+.activity-item {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 1rem;
+}
+
+.activity-item:before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e3e6f0;
+}
+
+.activity-item .activity-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.activity-item .activity-content {
+  background-color: white;
+  border-radius: 0.35rem;
+  padding: 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.activity-item .activity-time {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+
+/* Helper Classes
+-------------------------------------------------- */
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

@@ -1,0 +1,6 @@
+Product Title,Amazon ASIN,Price,Category,Occasion Type,Product Description,Image URL,Gender,Minimum Age,Maximum Age,Relationship,Featured
+"Echo Dot (4th Gen) Smart Speaker with Alexa",B07XJ8C8F5,49.99,Electronics,Birthday,"Smart speaker with improved sound and Alexa voice control",https://m.media-amazon.com/images/I/61MbLLagiVL._AC_SL1000_.jpg,Any,12,99,Any,No
+"Kindle Paperwhite (8 GB) – 2021 release",B08KTZ8249,139.99,Electronics,Christmas,"Kindle Paperwhite with 6.8" display and adjustable warm light",https://m.media-amazon.com/images/I/61PJuQeJVNL._AC_SL1500_.jpg,Any,12,99,Any,Yes
+"Swarovski Women's Infinity Necklace",B01N9JD2KO,79.00,Jewelry,"Valentine's Day","Beautiful infinity pendant with clear crystals on a rhodium-plated chain",https://m.media-amazon.com/images/I/61f4qj5mT0L._AC_UL1500_.jpg,Female,16,99,Partner,Yes
+"Lego Star Wars: The Razor Crest",B0851MGVDV,129.99,"Toys & Games",Birthday,"Star Wars The Mandalorian building set with Baby Yoda minifigure",https://m.media-amazon.com/images/I/71vr4L6Q8+L._AC_SL1500_.jpg,Male,10,99,Child,No
+"Instant Pot Duo 7-in-1 Electric Pressure Cooker",B00FLYWNYQ,89.99,"Home & Kitchen",Wedding,"7-in-1 Kitchen appliance: pressure cooker, slow cooker, rice cooker, steamer, sauté pan, yogurt maker and warmer",https://m.media-amazon.com/images/I/71WtwEvYDOS._AC_SL1500_.jpg,Any,18,99,Family,Yes
